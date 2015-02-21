@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html manifest="app.manifest">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Movie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+    <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div data-role="page"  id="startScreen" data-theme="b">
+        <div data-role="header">
+            <h1>Movie App</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li><input type="search" name="search" id="searchBar" value="" placeholder="Search" /></li>
+                <li><a href="#upcomingMovies" id="upcoming">Upcoming Movies</a></li>
+                <li><a href="#newReleases" id="new">New Releases</a></li>
+                <li id="kim">&#147;Kom når syrenerne blomstre min ven, og når det går imod forår igen&#148;</li>
+            </ul>
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <img class="corporateLogo" src="images/lightgrey.png" />
+        </div>
+    </div>
+
+    <!--New Page-->
+
+    <div data-role="page"  id="results" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" >
+            <h1>Results</h1>
+        </div>
+        <div data-role="content">
+
+            <ul data-role="listview"  id="searchList" data-theme="b" data-inset="true" class="innerNav">
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <img class="corporateLogo" src="images/lightgrey.png" />
+        </div>
+    </div>
+
+    <!--New Page-->
+
+    <div data-role="page"  id="upcomingMovies" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" >
+            <h1>Upcoming Movies</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview"  id="upcomingList" data-inset="true" data-theme="b" class="innerNav">
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <img class="corporateLogo" src="images/lightgrey.png" />
+        </div>
+    </div>
+
+    <!--New Page-->
+
+    <div data-role="page"  id="newReleases" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" >
+            <h1>New Releases</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview"  id="newList" data-theme="b" data-inset="true" class="innerNav">
+
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <img class="corporateLogo" src="images/lightgrey.png" />
+        </div>
+    </div>
+
+    <!--THANASSI THIS IS THE MOVIE INFO PAGE-->
+
+    <div data-role="page"  id="movieInfo" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" >
+            <h1>Movie Info</h1>
+        </div>
+        <div data-role="content">
+            <div id="movieData" data-role="listview" data-inset="true">
+
+            </div>
+            <div id = "full_overview">
+
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <img class="corporateLogo" src="images/lightgrey.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

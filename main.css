@@ -1,0 +1,77 @@
+@font-face{
+    font-family: lobster;
+    src: url(lobster.woff);
+}
+
+.ui-li-thumb{
+    left: 1px;
+    top: 0;
+    max-height: 80px;
+    max-width: 60px;
+    min-height: 80px;
+    min-width: 60px;
+    background: url("./images/Placeholder.jpg");
+}
+
+.keyImage{
+    width: 80px;
+    height: 80px;
+}
+
+#movieData{
+    height: 260px;
+    border: 2px solid #396b9e;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+
+#full_poster{
+    float: right;
+    margin-right: 5px;
+    border-radius: 8px;
+    border: 3px solid #396b9e;
+    height: 250px;
+    width: 160px;
+    background: url("./images/Placeholder_full.jpg");
+}
+
+#full_title{
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.full_note{
+    font-style: italic;
+    font-size: 12px;
+}
+
+#full_overview{
+    width: 100%;
+    float: right;
+}
+
+.genreImage{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.genreText{
+    font-size: 12px;
+    float: left;
+    margin-left: -55px;
+    margin-top: 60px;
+}
+
+#full_genre{
+    margin-top: -10px;
+}
+
+#kim{
+    text-align: center;
+    font-family: lobster;
+    font-size: 20px;
+    color: aliceblue;
+}
