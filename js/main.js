@@ -141,7 +141,7 @@ $(document).ready(function() {
             pageLimit = result.total_pages;
             $.each(result.results, function(i, row) {
                 //console.log(JSON.stringify(row));
-                $(destination).append('<li><a href="" data-id="' + row.id + '"><img src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185'+row.poster_path+'"/><h3>' + row.title + '</h3><p>' + row.vote_average + '/10</p></a></li>');
+                $(destination).append('<li><a href="" data-id="' + row.id + '"><img src="http://image.tmdb.org/t/p/w500/'+row.poster_path+'"/><h3>' + row.title + '</h3><p>' + row.vote_average + '/10</p></a></li>');
                 $("img").error(function () {
                     $(this).attr('src', 'images/Placeholder.jpg');
                 });
@@ -163,7 +163,7 @@ $(document).ready(function() {
             //Formatting individual movie info
             //THANASSI THIS IS THE PLACE FOR YOU!!
 			var g = result.genres;
-            $("#movieData").append('<img id="full_poster" src="http://d3gtl9l2a4fn1j.cloudfront.net/t/p/w185'+result.poster_path+'"/>');
+            $("#movieData").append('<img id="full_poster" src="http://image.tmdb.org/t/p/w500/'+result.poster_path+'"/>');
             $("#movieData").append('<h1 id="full_title">'+result.original_title+'</h1><a class="full_note">Released date:<br> '+result.release_date+'</a><br><a class="full_note">Running time:<br> '+result.runtime+' mins</a><br><br>');
 			$("#movieData").append('<div id="full_genre"></div>')
 			if(g.length > 0){
